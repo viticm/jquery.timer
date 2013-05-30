@@ -87,7 +87,7 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
 	        alert( 'running...' );
 	    };
 
-        // complete function
+        // complete listener function
 	    var funcCompleteListener = function()
 	    {
 	        alert( '[' +OBJ_Timer.options.name+ '] is end!' );

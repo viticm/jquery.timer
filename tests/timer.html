@@ -1,0 +1,34 @@
+<html>
+<script src="jquery.min.js"></script>
+<script src="jquery.timer.min.js"></script>
+<script>
+$(document).ready( function(){
+    // create new timer
+    var OBJ_Timer = $.timer.init
+    ({
+        iTimerDelay: 1000, 
+        iRepeatCount: 10, 
+        cRepeatType: 'timeout', 
+        name: 'my timer',
+    });
+
+    // run listener function
+    var funcRunListener = function()
+    {
+        alert( 'running...' );
+    };
+
+    // complete function
+    var funcCompleteListener = function()
+    {
+        alert( '[' +OBJ_Timer.options.name+ '] is end!' );
+    };
+    OBJ_Timer.addEventListener( 'timer', funcRunListener );
+    OBJ_Timer.addEventListener( 'timerComplete', funcCompleteListener );
+    OBJ_Timer.start();
+});
+</script>
+<body>
+    this is a test file.
+</body>
+</html>
