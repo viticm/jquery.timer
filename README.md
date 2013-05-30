@@ -74,26 +74,28 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
     $(document).ready( function(){
         // create new timer
         var OBJ_Timer = $.timer.init
-	({
-	    iTimerDelay: 1000, 
+	    ({
+	        iTimerDelay: 1000, 
             iRepeatCount: 10, 
             cRepeatType: 'timeout', 
             name: 'my timer',
-	});
+	    });
 	
-	// run listener function
-	var funcRunListener = function()
-	{
-	    alert( 'running...' );
-	};
+	    // run listener function
+	    var funcRunListener = function()
+	    {
+	        alert( 'running...' );
+	    };
 
-    // complete function
-	var funcCompleteListener = function()
-	{
-	    alert( '[' +OBJ_Timer.options.name+ '] is end!' );
-	};
+        // complete function
+	    var funcCompleteListener = function()
+	    {
+	        alert( '[' +OBJ_Timer.options.name+ '] is end!' );
+	    };
+        OBJ_Timer.start();
     </script>
     ```
+    This timer will do run listener function on each delay time, and on at the repeat count stop and do complete function.
 
 ## Why use jQuery timer?
 
