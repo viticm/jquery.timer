@@ -98,7 +98,7 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
     });
     </script>
     ```
-    This timer will do run listener function on each delay time, and on at the repeat count stop and do complete function.
+    This timer will do run listener function on each delay time, and on the repeat count stop and do complete function.
 
 ## Why use jQuery timer?
 
