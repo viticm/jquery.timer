@@ -92,6 +92,8 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
 	    {
 	        alert( '[' +OBJ_Timer.options.name+ '] is end!' );
 	    };
+        OBJ_Timer.addEventListener( 'timer', funcRunListener );
+        OBJ_Timer.addEventListener( 'timerComplete', funcCompleteListener );
         OBJ_Timer.start();
     });
     </script>
