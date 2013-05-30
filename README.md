@@ -27,14 +27,14 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
     $(document).ready( function(){
         // create new timer
         var OBJ_Timer = $.timer.init
-	({
-	    iTimerDelay: 1000, // timer delay time, it's same as javacript
+	    ({
+	        iTimerDelay: 1000, // timer delay time, it's same as javacript
             iRepeatCount: 10, // repeat count, when the timer type is only valid timeout
             cRepeatType: 'interval', // timer type: timeout|interval
             bDebug: false, // if open debug mode
             name: '', // timer name
             userData: {}, // user data	
-	});
+	    });
 
         // add listener function
         OBJ_Timer.addEventListener( cType, funcListener, bUseCapture ); 
@@ -60,9 +60,9 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
         // timer reset
         OBJ_Timer.reset();
 
-	// get timer run time(ms)
-	var iRunTimer = OBJ_Timer.getRunTime();
-        });
+	   // get timer run time(ms)
+	   var iRunTimer = OBJ_Timer.getRunTime();
+    });
     </script>
     ```
 
@@ -93,6 +93,7 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
 	        alert( '[' +OBJ_Timer.options.name+ '] is end!' );
 	    };
         OBJ_Timer.start();
+    });
     </script>
     ```
     This timer will do run listener function on each delay time, and on at the repeat count stop and do complete function.
