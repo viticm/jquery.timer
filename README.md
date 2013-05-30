@@ -38,18 +38,18 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
 
         // add listener function
         OBJ_Timer.addEventListener( cType, funcListener, bUseCapture ); 
-	/**
+	    /**
             cType: listener type: timer( run ) or timerComplete( stop )
-	    funcListener: listener function
-	    bUseCapture: if insert listener function in listener map begin
-	**/
+	        funcListener: listener function
+	        bUseCapture: if insert listener function in listener map begin
+	    **/
         
-	// remove listener function
+	    // remove listener function
         OBJ_Timer.removeEventListener( cType, funcListener ); 
-	/**
+	    /**
             cType: listener type: timer( run ) or timerComplete( stop )
-	    funcListener: listener function
-	**/
+	        funcListener: listener function
+	    **/
 
         // timer start
         OBJ_Timer.start();
@@ -87,13 +87,14 @@ It is about **3.75kb** minified, depend by jQuery, and has been tested in the fo
 	    alert( 'running...' );
 	};
 
-        // complete function
+    // complete function
 	var funcCompleteListener = function()
 	{
 	    alert( '[' +OBJ_Timer.options.name+ '] is end!' );
 	};
     </script>
     ```
+
 ## Why use jQuery timer?
 
 Easy and fast?
